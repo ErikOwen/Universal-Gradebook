@@ -88,7 +88,7 @@ class AssignmentTableViewController: UITableViewController {
         println("segue identifier is: " + segue.identifier!)
         
         if segue.identifier == "assignmentToScoreSegue" {
-            if let dest = segue.destinationViewController as? ScoreTableViewController, let cell = sender as? AssignmentTableViewCell {
+            if let dest = segue.destinationViewController.childViewControllers[0] as? ScoreTableViewController, let cell = sender as? AssignmentTableViewCell {
                 loader?.setCurrentAssignment(cell.userScore!)
                 dest.loader = loader
             }

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A61A8CF91B1CE81A00740E08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A8CF81B1CE81A00740E08 /* AppDelegate.swift */; };
-		A61A8CFB1B1CE81A00740E08 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A8CFA1B1CE81A00740E08 /* MasterViewController.swift */; };
-		A61A8CFD1B1CE81A00740E08 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A8CFC1B1CE81A00740E08 /* DetailViewController.swift */; };
 		A61A8D001B1CE81A00740E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61A8CFE1B1CE81A00740E08 /* Main.storyboard */; };
 		A61A8D021B1CE81A00740E08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61A8D011B1CE81A00740E08 /* Images.xcassets */; };
 		A61A8D051B1CE81A00740E08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61A8D031B1CE81A00740E08 /* LaunchScreen.xib */; };
@@ -41,8 +39,6 @@
 		A61A8CF31B1CE81A00740E08 /* Universal Gradebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Universal Gradebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61A8CF71B1CE81A00740E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A61A8CF81B1CE81A00740E08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A61A8CFA1B1CE81A00740E08 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		A61A8CFC1B1CE81A00740E08 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A61A8CFF1B1CE81A00740E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A61A8D011B1CE81A00740E08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A61A8D041B1CE81A00740E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -114,8 +110,6 @@
 				A61A8D1C1B1D00EF00740E08 /* images */,
 				A61A8D1A1B1D00E200740E08 /* SwiftyJSON.swift */,
 				A61A8CF81B1CE81A00740E08 /* AppDelegate.swift */,
-				A61A8CFA1B1CE81A00740E08 /* MasterViewController.swift */,
-				A61A8CFC1B1CE81A00740E08 /* DetailViewController.swift */,
 				A61A8CFE1B1CE81A00740E08 /* Main.storyboard */,
 				A61A8D011B1CE81A00740E08 /* Images.xcassets */,
 				A61A8D031B1CE81A00740E08 /* LaunchScreen.xib */,
@@ -264,8 +258,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A61A8D2A1B1D011B00740E08 /* ModelObjects.swift in Sources */,
-				A61A8CFD1B1CE81A00740E08 /* DetailViewController.swift in Sources */,
-				A61A8CFB1B1CE81A00740E08 /* MasterViewController.swift in Sources */,
 				A61A8D2C1B1D011B00740E08 /* SectionTableViewController.swift in Sources */,
 				A61A8D281B1D011B00740E08 /* GradebookLoader.swift in Sources */,
 				A61A8CF91B1CE81A00740E08 /* AppDelegate.swift in Sources */,
@@ -478,6 +470,7 @@
 				A61A8D161B1CE81A00740E08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A61A8D171B1CE81A00740E08 /* Build configuration list for PBXNativeTarget "Universal GradebookTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +479,7 @@
 				A61A8D191B1CE81A00740E08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
