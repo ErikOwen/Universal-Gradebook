@@ -12,10 +12,31 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
-
+    var loader: GradebookLoader?
+    
+    func setupLoader() {
+        loader = GradebookLoader()
+        
+        /*This is how to get to the login controller from the entrance point of the app*/
+        let test: AnyObject? = window?.rootViewController?.childViewControllers[0].childViewControllers[0]
+        
+        let splitViewController = self.window!.rootViewController as! UISplitViewController
+        /*this was the array index: splitViewController.viewControllers.count-1*/
+        let navigationController = splitViewController.viewControllers[0] as! UINavigationController
+        
+        if let vc = navigationController.childViewControllers[0] as? LoginViewController {
+            vc.loader = loader
+        }
+        else {
+            println("unable to pass loader")
+        }
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        setupLoader()
+        
         let splitViewController = self.window!.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
