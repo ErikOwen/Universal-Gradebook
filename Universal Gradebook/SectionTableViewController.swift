@@ -32,6 +32,9 @@ class SectionTableViewController: UITableViewController {
         // println("view did load")
         tableView.reloadData()
         self.title = "Sections"
+        
+        navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
+        navigationItem.leftItemsSupplementBackButton = true
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         

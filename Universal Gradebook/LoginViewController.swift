@@ -35,6 +35,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
+        navigationItem.leftItemsSupplementBackButton = true
+        
         /*Sets the background image*/
         cpImage.image = UIImage(named: "cp_logo");
         
@@ -42,6 +45,9 @@ class LoginViewController: UIViewController {
         passwordInput.secureTextEntry = true;
         
         self.title = "Cal Poly Login"
+        
+        navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
+        navigationItem.leftItemsSupplementBackButton = true
         
         var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         view.addGestureRecognizer(tap)
